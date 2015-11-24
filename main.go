@@ -14,7 +14,7 @@ func main() {
 }
 
 func reboot() {
-	cmd := "reboot-factory"
+	cmd := "factory-diag.factory-reboot"
 	fmt.Println("reboot-factory")
 	args := []string{}
 	if err := exec.Command(cmd, args...).Run(); err != nil {
